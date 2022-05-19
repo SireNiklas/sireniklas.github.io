@@ -1,0 +1,39 @@
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">I am a student at Metropolitan Community College within the <b>DIMA 3D Animation & Games</b> Program.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">asdsaasdasd</p></div>
+                </div>
+                <!-- About Section Button-->
+
+                <!-- Resume Item-->
+                <center><div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <a class="btn btn-xl btn-outline-light" data-bs-target="#resumeModal">
+                            <i class="fas fa-plus me-2"></i>
+                            RESUME
+                        </a>
+                    </div>
+                </div></center>
+
+                <!-- <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-plus me-2"></i>
+                        RESUME
+                    </a>
+                </div> -->
+            </div>
+        </section>
