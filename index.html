@@ -27,15 +27,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li> -->
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#resources">Resources</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+        <header class="masthead bg-primary text-white text-center" id="home">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <!--<img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." /> -->
@@ -58,7 +59,7 @@
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">Portfolio</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -77,10 +78,60 @@
                             <img class="img-fluid" src="assets/img/portfolio/GameFront.png" alt="..." />
                         </div>
                     </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
+
+                <!-- About Section-->
+                <section class="page-section bg-primary text-white mb-0" id="about">
+                    <div class="container">
+                        <!-- About Section Heading-->
+                        <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom divider-light">
+                            <div class="divider-custom-line"></div>
+                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                            <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- About Section Content-->
+                        <div class="row">
+                            <div class="col-lg-4 ms-auto"><p class="lead">I am a student at Metropolitan Community College within the <b>DIMA 3D Animation & Games</b> Program.</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">asdsaasdasd</p></div>
+                        </div>
+                        <!-- About Section Button-->
         
+                        <!-- Resume Item-->
+                        <center><div class="col-md-6 col-lg-4 mb-5">
+                            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                    <div class="portfolio-item-caption-content text-center text-white"></div>
+                                </div>
+                                <a class="btn btn-xl btn-outline-light" data-bs-target="#resumeModal">
+                                    <i class="fas fa-plus me-2"></i>
+                                    SKILLS
+                                </a>
+                            </div>
+                        </div></center>
+        
+                        <!-- <div class="text-center mt-4">
+                            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                                <i class="fas fa-plus me-2"></i>
+                                RESUME
+                            </a>
+                        </div> -->
+                    </div>
+                </section>
 
 
         <!-- Footer-->
@@ -97,7 +148,7 @@
                         </p>
                     </div> -->
                     <!-- Footer Social Icons-->
-                    <center><div class="col-lg-4 mb-5 mb-lg-0">
+                    <center><div class="col-lg-4 mb-5 mb-lg-0" id="resources">
                         <h4 class="text-uppercase mb-4">Resources</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-github"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-discord"></i></a>
@@ -131,7 +182,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Resume</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Skills</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -139,9 +190,21 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <!--<img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." /> -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">****</p>
+                                    <p class="mb-4 text-white">OS: Linux, Windows, Mac. <hr class="text-white">
+                                    <p class="text-white">Command Lines: Linux Terminal, Windows CMD/Power Shell, Mac Terminal
+                                    <hr class="text-white"><p class="text-white">Version Control: GIT/Github
+                                    <hr class="text-white"><p class="text-white">Game Engines: Unity, Godot, Unreal
+                                    <hr class="text-white"><p class="text-white">IDE/Text Editors: Rider, Microsoft Visual Studio/Code, Pycharm, Atom, Sublime Text, JetBrains IntelliJ, CLion
+                                    <hr class="text-white"><p class="text-white">Programming Languages: HTML, CSS, Python, GDScript, C#, C, C++
+                                    <hr class="text-white"><p class="text-white">Licensing/Copyright
+                                    <hr class="text-white"><p class="text-white">Collaboration Tools: Discord, Trello, Codecks</p>
+                                    <hr class="text-white"><p class="text-white">Server/Networking: Ubuntu Server, CentOS, Game Servers - Public & Private, Raspberrypi PIs, Game Server Setup</p>
+                                    <hr class="text-white"><p class="text-white">Hardware: Custom Built PCs</p>
+                                    <hr class="text-white"><p class="text-white">Game Networking (Dabbled): Unity Netcode for Gameobjects</p>
+                                    <hr class="text-white"><p class="text-white">Frameworks: Bootstrap</p>
+                                    <hr class="text-white"><p class="text-white">Libraries: PyGame.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -166,7 +229,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bit by Byte</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Bit by Byte</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -176,7 +239,39 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/gameshowoff.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This is my current project <b>Bit by Byte</b>, started as a game sandbox to play around and learn the Unity Game Engine. Now instead of just a sandbox it has turned into a full game project.</p>
+                                    <p class="mb-4 text-white">This is my current project <b>Bit by Byte</b>, started as a game sandbox to play around and learn the Unity Game Engine. Now instead of just a sandbox it has turned into a full game project. The preview is its current state that involves. <b>Custom Player Movment, Cinemachine Camera, Unitys New Input System, Navmesh AI Movement, Raycasts, UI.</b></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Bit by Byte &middot; Multiplayer</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayer.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
