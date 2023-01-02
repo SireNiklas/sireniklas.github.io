@@ -345,19 +345,14 @@
 
 
         <script>
-        /**
-         * Function to open a bootstrap modal based on ID
-         * @param int
-         */
-        function directLinkModal(hash) {
-          $(hash).modal('show');
-        }
+        $(document).ready(function() {
 
-        /**
-         * Call the function on window load
-         * @param hash of the window
-         */
-        directLinkModal(window.location.hash);</script>
+          if(window.location.href.indexOf('#portfolioModal3') != -1) {
+            $('#portfolioModal3').modal('show');
+          }
+
+        });
+        </script>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
