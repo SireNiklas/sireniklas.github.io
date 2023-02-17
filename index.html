@@ -93,6 +93,15 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
+                            <img class="img-fluid" src="assets/img/portfolio/projectilefight.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2.5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalhidden2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
                             <img class="img-fluid" src="assets/img/portfolio/multiplayerfront.png" alt="..." />
                         </div>
                     </div>
@@ -103,6 +112,24 @@
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/wukongfront.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/monsterbashfront.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/blockrunfront.png" alt="..." />
                         </div>
                     </div>
 
@@ -277,10 +304,14 @@
                                         <source src="assets/img/portfolio/Skycadia Nintendo Switch Trailer-(720p30).mp4" type="video/mp4" />
                                       </video>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-white">This game <b>Skycadia</b> was a project five years in the making before I joined. When I joined I was assigned to profiling and weapons logic. I modified the current codebase and created modular flexible code.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="document.getElementById('SkycadiaTrailer').pause();">
+                                    <p class="mb-4 text-white"><b>Skycadia</b>, a project five years in the making. I joined as an gameplay engineer intern I was assigned to profiling issues, created new weapons, added a new ship & pilot stats system. I created modular flexible code, as well as taught git and its concepts to other interns.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="document.getElementById('SkycadiaTrailer').pause();">                                        
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://skycadia.com'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Skycadia.com
                                     </button>
                                 </div>
                             </div>
@@ -309,10 +340,14 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/singleplayer.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-white">This project <b>Bit by Byte</b> is currently an inactive project, started as a game sandbox to play around and learn the Unity Game Engine. Now instead of just a sandbox it has turned into a full game project. The preview is its current state that involves. <b>Custom Player Movment, Cinemachine Camera, Unitys New Input System, Navmesh AI Movement, Raycasts, UI.</b></p>
+                                    <p class="mb-4 text-white"><b>Bit by Byte</b> Started as a game sandbox to play around and learn the Unity Game Engine. The preview is its current state that involves. <b>Custom Player Movment, Cinemachine Camera, Unity's New Input System, Navmesh AI Movement, Raycasts, UI.</b></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://github.com/SireNiklas/Bit-by-Byte/tree/singleplayer-main'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Bit by Byte Github page.
                                     </button>
                                 </div>
                             </div>
@@ -331,7 +366,39 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Bit by Byte &middot; Multiplayer</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Projectile Fight</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayerpfjoineddemo.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-white"><b>Projectile Fight</b>, my second attempt at a multiplayer game. It is a work in progress multiplayer FPS, planned to be released on Steam. I have developed it using Facepunch Steamworks, and Unity's Netcode for Gameobjects. Currently it supports steam lobbies, servers, and simple FPS play including death and shooting. Due to it being in very early stages of development, there is little to show.</b></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2.5-->
+        <div class="portfolio-modal modal fade" id="portfolioModalhidden2" tabindex="-1" aria-labelledby="portfolioModalhidden2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Bit by Byte | Multiplayer</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -341,10 +408,14 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayer.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-white">This project is currently an inactive project as it was  branch of an earlier stage of Bit by Byte. I wanted to try out multiplayer and used the pre-release of "Netcode for Game objects". This has so far been my result. I was able to get <b>players to join in button click, one host and second client this could also be ran as a dedicated server with serveral clients connected. I was able to sync position and movement with the host but not the client and this state still remains as is.</b></p>
+                                    <p class="mb-4 text-white"><b>Bit by Byte Multiplayer</b>, this project was a test of my abilities to see if I could create a game from one of my favorite genres, <b>multiplayer</b>. I was able to get connections established and one end user walking and moving, this was created using Networking for Gameobjects Pre.</b></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://github.com/SireNiklas/Bit-by-Byte/tree/main'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Bit by Byte Multiplayer Github Page.
                                     </button>
                                 </div>
                             </div>
@@ -373,10 +444,14 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-white">This is my current project <b>Melee Combat System</b>, started as a game sandbox to play around and learn the Unreal Engine 5 Game Engine. Now instead of just a sandbox it has turned into a full project. The preview is its current state that involves. <b>Paragons Wukong Character Asset, Their Combo System, and my implementation of the right mouse attack. The character and its systems had to be reconfigured in varying degrees to make it work.</b></p>
+                                    <p class="mb-4 text-white"><b>Melee Combat System</b>, started as a game sandbox to play around and learn the Unreal Engine 5 Game Engine. The preview is its current state that involves: <b>Paragons Wukong Character Asset, Their Combo System, and my implementation of the right mouse attack. The character and its systems had to be reconfigured in varying degrees to make it work.</b></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://github.com/SireNiklas/MeleeCombatSystem'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Melee Combat System Github page.
                                     </button>
                                 </div>
                             </div>
@@ -385,6 +460,79 @@
                 </div>
             </div>
         </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Monster Bash</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Monster Bash Demo.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-white"><b>Monster Bash</b>, prototyped this game to develop more of an understanding of animation and understand how to use animation that ties in to collisions.</b></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://sirniklas.itch.io/monster-bash'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Monster Bash Itch.io page.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Block Run</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Block Run Demo.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-white"><b>Block Run</b>, Started me off into the game industry, I have messed with game development prior to this, but never really created anything, this was the first game I made.</b></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://sirniklas.itch.io/block-run'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit Block Run Itch.io page.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <script>
