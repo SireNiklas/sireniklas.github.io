@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio - Nicholas Harris</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            code pre {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: block;
+            padding: 5px;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Highlight-->
+        <div class="portfolio-modal modal fade" id="portfolioHighlight" tabindex="-1" aria-labelledby="portfolioHighlight" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Skycadia</h2>
+                                    <br/>
+                                    <p>Skycadia is a retro arcade dogfighter released on Xbox Series X, Nintendo Switch, and Steam that I worked on as a Unity developer. I authored development tools using C# and Rider primarily focused on the creation and systems supporting weapons, ships, and dialogue on the project.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <video controls autoplay muted id="SkycadiaTrailer" width="720" height="480">
+                                        <source src="assets/img/portfolio/Skycadia Nintendo Switch Trailer-(720p30).mp4" type="video/mp4" />
+                                      </video>
+                                    <!-- Portfolio Modal - Text-->
+                                   <hr/>
+                                   <p class="mb-4 text-white">My work is reflected in the weapons systems, ships, and the dialogue within the game.
+
+                                    <li align="left">Created a flexible editor tool for the dialogue system.</li>
+                                    <p align="left">&emsp;&emsp; This tool allowed a drag and drop approach for creating the dialogue in the game, it was reusable and modular.</p>
+                                    <li align="left">Used a designer friendly approach to create a weapons and ships stats system.</li>
+                                    <p align="left">&emsp;&emsp; The ships have different stats that mix and match when selected, each ship and weapon stat block is a cross scene instance for reusablity and ease of use throughout the game.</p>
+                                    <br/>
+                                    <li align="left">Setup the project with relavent ignores.</li>
+                                    <li align="left">Tought team members how to commit, push, fetch, create and branch, and merge changes.</li>
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="document.getElementById('SkycadiaTrailer').pause();">                                        
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://skycadia.com'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit <b>Skycadia.com</b>
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://store.steampowered.com/app/1364710/Skycadia/'">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        See it on Steam <b></b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1 | Projectile Fight-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Projectile Fight</h2>
+                                    <br/>
+                                    <p class="mb-4 text-white" align="left">Multiplayer prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayerpfjoineddemo.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+
+                                    <h6>FEATURES:</h6>
+                                    <li align="left">Establish a connection between two users simultainiously. AKA Lobby</li>
+                                    <p align="left">&emsp;&emsp; Each user can create a lobby, and another can join that said lobby.</p>
+                                    <li align="left">Steam connectivty, to allow players to join eatchother with ease.</li>
+                                    <p align="left">&emsp;&emsp; Players can get invites, or join off of their friends to easily connect, and enjoy. (Side note: this also allows for Steams NATpunchthrough which allows connection without portforwarding.</p>
+                                    <li align="left">Server Authoritative for competitive gameplay.</li>
+                                    <p align="left">&emsp;&emsp; Keep all players in sync of movement, and allow the server to dictate what goes and what doesn't.</p>
+
+                                    <hr/><p class="mb-4 text-white" align="left">Lobby and client connections where accomplished using Netcode for GameObjects with Steamworks. The issues I had where to get the data from the Steam API to interface properlly with the Unity objects. <br/><br/> The code snippet below displays how I had displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides, this way I could filter my lobbies out from any others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attatched, thus using Unity's UI ToolKit to display in their list view each item that it has grabbed it giving the list the data it needs to present.<br/><br/> <sup>Asteriks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">if (SteamManager.Instance.lobbiesList != null)
+{
+
+    //Create a list of data.In this case, numbers from 1 to 1000.
+    foreach (Lobby lobby in SteamManager.Instance.lobbiesList.ToList())
+    {
+
+        SteamManager.Instance.activeLobbies.Add(lobby);
+        Debug.Log(SteamManager.Instance.activeLobbies.Count);
+
+    }
+
+    int i = 0;
+    
+    int itemCount = SteamManager.Instance.activeLobbies.Count;
+    var items = new List<Tuple<string, SteamId, int, int>>(itemCount);
+    for (i = 0; i < itemCount; i++)
+    {
+        items.Add(Tuple.Create(SteamManager.Instance.activeLobbies[i].GetData("lobbyName"), SteamManager.Instance.activeLobbies[i].Id, SteamManager.Instance.activeLobbies[i].MemberCount, SteamManager.Instance.activeLobbies[i].MaxMembers));
+        Debug.Log(items[i].Item1);
+        //Debug.Log(activeLobbies[i]);
+    }
+
+    // The "makeItem" function is called when the
+    // ListView needs more items to render.
+    Func<VisualElement> makeItem = () =>
+    {
+        var root = new VisualElement();
+        var label = new Label();
+        root.Add(label);
+        return root;
+    };
+
+    // As the user scrolls through the list, the ListView object
+    // recycles elements created by the "makeItem" function,
+    // and invoke the "bindItem" callback to associate
+    // the element with the matching data item (specified as an index in the list).
+    Action<VisualElement, int> bindItem = (e, i) =>
+    {
+        var label = e.Q<*Label*>();
+        label.text = items[i].Item1 + " | Members: " + items[i].Item3 + "/" + items[i].Item4;
+    };
+
+    // Provide the list view with an explict height for every row
+    // so it can calculate how many items to actually display
+    const int itemHeight = 64;
+
+    var listView = new ListView(items, itemHeight, makeItem, bindItem);
+
+    listView.onItemsChosen += objects => SteamManager.Instance.JoinLobby(items[listView.selectedIndex].Item2);
+    //SteamManager.Instance.currLobby = items[listView.selectedIndex].Item2;
+    //listView.onSelectionChange += objects => Debug.Log(items[listView.selectedIndex].ToString());
+
+    // List Style
+    listView.showAlternatingRowBackgrounds = AlternatingRowBackground.All;
+    listView.selectionType = SelectionType.Single;
+    listView.style.flexGrow = 1.0f;
+    listView.style.fontSize = 48f;
+    listView.style.justifyContent = Justify.Center;
+    listView.showBoundCollectionSize = true;
+
+    body.Add(listView);
+}                                   
+                                    </pre></code>
+                                    <br/><br/><hr/>
+                                    <p class="mb-4 text-white" align="left">Server prediction and Client Reconcilieation where my too main problems that I had to accomplish in which the below does just that. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the clients transform to that of the servers transform.</p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">void OnServerStateChanged(TransformState previousState, TransformState serverState) {
+if (!IsLocalPlayer) return;
+
+if (_previousTransformState == null) {
+    _previousTransformState = serverState;
+}
+
+TransformState calculatedState = _transformStates.First(localState => localState.Tick == serverState.Tick);
+
+if (calculatedState.Position != serverState.Position) {
+    Debug.Log("CORRECTING CLIENT POS!");
+        
+    //Teleport the player to server pos.
+    TeleportPlayer(serverState);
+
+    //Replay the inputs that happened after. | Change to for loop if needed. (Not optimised as is.
+    IEnumerable<InputState> inputs = _inputStates.Where(input => input.Tick > serverState.Tick);
+
+    // Lazy way of sorting, algorithm would be better.
+    inputs = from input in inputs orderby input.Tick select input;
+
+        foreach (InputState inputState in inputs) {
+            MovePlayer(inputState.movementInput);
+            RotatePlayer(inputState.lookInput);
+
+            TransformState newTranformState = new TransformState()
+            {
+                Tick = inputState.Tick,
+                Position = transform.position,
+                Rotation = transform.rotation,
+                HasStartedMoving = true
+
+            };
+
+            // Could be written better once I understand how to write it better.
+            for (int i = 0; i < _transformStates.Length; i++)
+            {
+                if (_transformStates[i].Tick == inputState.Tick)
+                {
+                    _transformStates[i] = newTranformState;
+                    break;
+                }
+            }
+        }
+    }
+}
+
+private void TeleportPlayer(TransformState state)
+{
+    _controller.enabled = false;
+    transform.position = state.Position;
+    transform.rotation = state.Rotation;
+    _controller.enabled = true;
+
+    for (int i = 0; i < _transformStates.Length; i++)
+    {
+        if (_transformStates[i].Tick == state.Tick)
+        {
+            _transformStates[i] = state;
+            break;
+        }
+    }
+}
+                                    </pre></code>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.open('https://github.com/SireNiklas/Projectile-Fight/tree/Server-Authority-Migration', '_blank')">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit <b>Projectile Fight</b> Github page.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2 - Melee Combat System-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Unreal Engine 5 &bull; Melee Combat System</h2>
+                                    <br/>
+                                    <p>Recreated Wukong melee combat from Paragon using the released asset from Epic Games <br/> Expanded on this project by creating a few different shaders.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <p>Created using C++ and Blueprints, I setup the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
+                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Shaders<hr/></h3>
+                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I setup a pixelated shader, toon/cel shader, and </p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/8bitTest.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Toon Shader.gif" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToonCharacter.png" alt="..." />
+                                    <br/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.open('https://github.com/SireNiklas/MeleeCombatSystem', '_blank')">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Visit <b>Melee Combat System</b> Github page.
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Portfolio Modal - PORTFOLIO -->
+        <div class="portfolio-modal modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">NICHOLAS HARRIS - RESUME</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="modal-body">
+
+                                        <embed src="assets/resume\Nicholas Harris Resume.pdf"
+                                               frameborder="0" width="100%" height="800">
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        $(document).ready(function() {
+
+          if(window.location.href.indexOf('#portfolioModal3') != -1) {
+            $('#portfolioModal3').modal('show');
+          }
+
+        });
+        </script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

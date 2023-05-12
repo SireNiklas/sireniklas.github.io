@@ -15,12 +15,21 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            code pre {
+            background-color: #161618;
+            border: 1px solid #161618;
+            display: block;
+            padding: 5px;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Portfolio &bull; Nicholas Harris</a>
+                <a class="navbar-brand" href="#page-top">Nicholas Harris - Game Developer</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -30,6 +39,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Home</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,15 +59,21 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">MCC Student - Programmer</p>
+                <p class="masthead-subheading font-weight-light mb-0">
+                <a class="btn btn-xl text-white" href="https://www.linkedin.com/in/nicholas-h-ab0a1223b/"><i class="fa-brands fa-linkedin-in"></i>   LinkedIn</a>
+                <a class="btn btn-xl text-white" data-bs-toggle="modal" data-bs-target="#resumeModal"><i class="fa fa-file-text"></i>   Resume</a>
+                <a class="btn btn-xl text-white" href="https://github.com/sireniklas"><i class="fab fa-fw fa-github"></i>   Github</a>
+                <a class="btn btn-xl text-white" href="mailto:nicholasharrisofficial@outlook.com"><i class="fas fa-envelope"></i>   Email</a>
+            </p>
+            <!--<span style="font-size: 42px">VIEW PROJECTS</span>
+            <span style="font-size: 72px">&#129095;</span>-->
             </div>
         </header>
-
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">Projects</h2>
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
@@ -65,6 +81,8 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
+
+
                     <!-- Portfolio Highlight | Skycadia -->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioHighlight">
@@ -75,6 +93,16 @@
                         </div>
                         <p class="text-white">Skycadia | Intership, Dec 2022 - Present</p>
                     </div>
+                    <!-- Portfolio Highlight | Skycadia -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalCC">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/CCCoverPhoto.png" alt="..." />
+                        </div>
+                        <p class="text-white">CC - Studio Nisse | Intership, Dec 2022 - Present</p>
+                    </div>
                 <!-- Portfolio Item 2 | Projectile Fight -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
@@ -83,75 +111,25 @@
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/projectilefight.png" alt="..." />
                     </div>
-                    <p class="text-white">WIP Multiplayer FPS | Projectile Fight</p>
+                    <p class="text-white">Projectile Fight</p>
                 </div>
-                <!-- Portfolio Item 1 | Magical Horde Shooter -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Magic Horde Shooter Demo Front.png" alt="..." />
-                    </div>
-                    <p class="text-white">Prototype | Magical Horde Shooter</p>
-                </div>
-                <!-- Portfolio Item 4 | Monster Bash -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/monsterbashfront.png" alt="..." />
-                    </div>
-                    <p class="text-white">Monster Bash</p>
-                </div>
-                <!-- Portfolio Item 3 | Battery Collector-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Unreal Game Demo Front.png" alt="..." />
-                    </div>
-                    <p class="text-white">Battery Collector</p>
-                </div>
-                <!-- Portfolio Item 6 | Godot Prototype-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Godot Demo Front.png" alt="..." />
-                    </div>
-                    <p class="text-white">Prototype | Godot TPS</p>
-                </div>
-                <!-- Portfolio Item 3 | Melee Combat System -->
+                <!-- Portfolio Item 3 | Melee Combat System 
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/wukongfront.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/portfolio/UE5.jpg" alt="..." />
                     </div>
-                    <p class="text-white">Prototype | Melee Combat System</p>
-                </div>
-                <!-- Portfolio Item 5 | Block Run -->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/blockrunfront.png" alt="..." />
-                    </div>
-                    <p class="text-white">Block Run</p>
-                </div>
+                    <p class="text-white">Unreal Engine 5 Exploration</p>
+                </div>-->
         </section>
         
         <!-- About Section-->
                 <section class="page-section bg-primary text-white mb-0" id="about">
                     <div class="container">
                         <!-- About Section Heading-->
-                        <h2 class="page-section-heading text-center text-uppercase text-white">Skills & Experience</h2>
+                        <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
                         <!-- Icon Divider-->
                         <div class="divider-custom divider-light">
                             <div class="divider-custom-line"></div>
@@ -160,49 +138,18 @@
                         </div>
                         <!-- About Section Content-->
                         <div class="row">
-                            <div class="col-lg-4 ms-auto"><p class="lead">
-                                Game Development: Unity, Godot, Unreal Engine 5 | Unity Networking: Netcode for Game Objects.
-                                <hr class="text-white">
-                                <p class="lead">
-                                    Servers/Networking: Ubuntu Server, CentOS Server, Game Servers – Public & Private / Setup
-                                <hr class="text-white">
-                                <p class="lead">
-                                    IDE: Rider, Microsoft Visual Studio/Code, PyCharm, CLion
-                                <hr class="text-white">
-                                <p class="lead">
-                                    Programming Languages: Python, GDScript, C#, C, C++
-                                <hr class="text-white"></div>
-                            <div class="col-lg-4 me-auto">
-                                <p class="lead">
-                                    Collaboration Tools: Discord, Zoom, Trello, Codecks, Jira & Confluence
-                                    <hr class="text-white">
-                                <p class="lead">
-                                    OS: Windows, Linux – Linux Terminal, Mac
-                                    <hr class="text-white">
-                                <p class="lead">
-                                    Programming Libraries: PyGame
-                                    <hr class="text-white">
-                                <p class="lead">Version Control: GIT/Github</p>
-                            </div>
+                            <div class="col-lg-4 ms-auto"><p class="lead">At the age of 7 I was introduced to Java using Eclipse through my father, the programming field has held my interest ever since. Having become an avid game player and developer, it’s become paramount to me to provide the support and skills needed to develop games I can be proud of. Ultimately, game programming was the most direct way to mix my passion for gaming and programming together to create unbelievable worlds.</p></div>
+                            <div class="col-lg-4 me-auto"><p class="lead">Within gaming and programming, the role of support has always been a forte. In the end though the goal is to reach a position that allows the opportunity to lead and manage a team of my own. My current skillset includes C++, C#, Python, Godot, Unity Engine and Unreal Engine 5 which have allowed me to begin developing my own game concepts.</p></div>
                         </div>
+                        <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                        <i class="fas fa-plus me-2"></i>
+                        RESUME
+                    </a>
+                </div>
                         <!-- About Section Button-->
                     </div>
                 </section>
-        
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Social Icons-->
-                    <center><div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Resources</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/sireniklas"><i class="fab fa-fw fa-github"></i></a>
-                        <!-- <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-discord"></i></a> -->
-                        <a class="btn btn-outline-light btn-social mx-1" href="mailto:nicholasharrisofficial@outlook.com"><i class="fas fa-envelope"></i></a>
-                    </div></center>
-                </div>
-            </div>
-        </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>&copy; 2023 sireniklas.github.io</small></div>
@@ -210,7 +157,7 @@
 
         <!-- Portfolio Modals-->
         <!-- Portfolio Highlight-->
-        <div class="portfolio-modal modal fade" id="portfolioHighlight" tabindex="-1" aria-labelledby="portfolioHighlight" aria-hidden="true">
+        <div class="portfolio-modal modal fade text-white" id="portfolioHighlight" tabindex="-1" aria-labelledby="portfolioHighlight" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -220,6 +167,8 @@
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Skycadia</h2>
+                                    <br/>
+                                    <p>Skycadia is a retro arcade dogfighter released on Xbox Series X, Nintendo Switch, and Steam that I worked on as a Unity developer. I authored development tools using C# and Rider primarily focused on the creation and systems supporting weapons, ships, and dialogue on the project.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -231,14 +180,214 @@
                                         <source src="assets/img/portfolio/Skycadia Nintendo Switch Trailer-(720p30).mp4" type="video/mp4" />
                                       </video>
                                     <!-- Portfolio Modal - Text-->
-                                   <hr/><p class="mb-4 text-white">I joined the team developing <b>Skycadia</b>, as the gameplay engineer intern and was assigned to gameplay mechanics. I was tasked to profile issues, create new weapons, implement a ship and pilot stats modifier system using Scriptable Objects. Everything was done whilst writing modular and flexible code. I was the subject matter expert of git and familiarized my fellow interns with its concepts and applications.</p>
+                                   <hr/>
+                                    <h3>Responsibilities</h3>
+                                    <li align="left">Created a flexible editor tool for the dialogue system.</li>
+                                    <p align="left">&emsp;&emsp; This tool allowed a drag and drop approach for creating dialogue nodes in the game.</p>
+                                    <li align="left">Created a designer friendly approach to create stats for weapons and ships.</li>
+                                    <p align="left">&emsp;&emsp; Creating this small tool helped speed up the creation proccess immensely, create a ship was just a few clicks and a dragon and a drop away.</p>
+                                    <li align="left">Subject matter expert for GIT.</li>
+                                    <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to commit, push, fetch, create and branch, and merge changes.</p>
+                                    <hr/>
+                                    <h3>Dialogue Tool</h3>
+                                    <p>This tool makes creating what we called Lore Points easier to insert into levels, with the examples below I created the LorePoint script in which allows the already created dialgue system to be modular and used anywhere.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/skycadiatoolfunction.gif" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Skycadia Lorepoint Screenshot.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LorePointCreationTool.gif" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4" align="left">This is the script that made the whole system modular, instead of creating a single set of dialogue that couldn't be reused as it was only activated when you spawn, this takes a more node approach in which the user will spawn a node/gameobject which has its own data, that data is read from this script effectivly making this script the core of my system.</sup></p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
+{
+    if (other.gameObject.CompareTag("TargetableEntity"))
+    {
+        RadioTransmissionManager radioLore = GetComponent<RadioTransmissionManager>();
+        SFGameManager.instance.radioTransmissionManager = radioLore;
+        radioLore.enabled = true;
+    }
+}                          
+                                    </pre></code>
+                                    <hr/><p class="mb-4" align="left">The snippet below will allow the object to be spawned from a menu item where the camera is currently looking. So instead of created a gameobject and filling that object with components it needs, it can be spawn for a meny preconfigured.</sup></p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
+                                        [MenuItem("Skycadia/Create LorePoint")]
+public static void CreateLorePoint(MenuCommand menuCommand)
+{
+    CreatePrefab("LorePoint");
+}
+
+[MenuItem("GameObject/Create LorePoint", false, 0)]
+public static void CreateLorePointCtxMenu()
+{
+    CreatePrefab("LorePoint");
+}
+
+public static void CreatePrefab(string path)
+{
+    GameObject loreObject = PrefabUtility.InstantiatePrefab(Resources.Load(path)) as GameObject;
+    Place(loreObject);
+}
+
+public static void Place(GameObject gameObject)
+{
+    // Find location
+    SceneView lastView = SceneView.lastActiveSceneView;
+    gameObject.transform.position = lastView ? lastView.pivot : Vector3.zero;
+
+    // Make sure we place the object in the proper scene, with a relevant name
+    StageUtility.PlaceGameObjectInCurrentStage(gameObject);
+    GameObjectUtility.EnsureUniqueNameForSibling(gameObject);
+
+    // Record undo, and select
+    Undo.RegisterCreatedObjectUndo(gameObject, $"Create Object: {gameObject.name}");
+    Selection.activeGameObject = gameObject;
+
+    // For prefabs, let's mark the scene as dirty for saving
+    EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+}
+
+void OnDrawGizmosSelected()
+{
+    // Draw a yellow sphere at the transform's position
+    Gizmos.color = new Color(.5f, .5f, 1f, .5f);
+    Gizmos.DrawSphere(transform.position, GetComponent<SphereCollider>().radius * transform.localScale.x);
+}                     
+                                    </pre></code>
+                                    <hr/>
+                                    <h3>Designer friendly Ship & Pilot Stats</h3>
+                                    <p>This system was designed to make creating pilots and ships easier and more organised, but to allow non programmers to also create and modify the stats that interfaced with the code aswell.</p>
+                                    <!-- Portfolio Modal - Image-->
+                                    <p align="left">These screen shots below are examples of my designer friendly stats system. It allows a plug and play style of development, so if a designer or artist needs to make a quick change they have a quick and easy way to do so.</p>
+                                    <p align="left">The base of the system are Scriptable Objects. Scriptable Objects are cross scene data sets used for storing data and creating a simple way to edit the data instead of hardcoding it.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersSO.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersShipSO.png" alt="..." />
+                                    <hr/>
+                                    <h3>Designer friendly Weapon Stats</h3>
+                                    <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exsists, looks like [newAttribute]. This attribute acts like a condition operator in which it will hide or show something depending on a boolean.</sup></p>
+                                    <code><pre class="mb-4 text-white" align="left">    // Determine whether this field should be visible.
+// (We could probably do some caching here...)
+bool ShouldShow(SerializedProperty property) {
+    var conditionAttribute = (ConditionalPropertyAttribute)attribute;
+    string conditionPath = conditionAttribute.condition;
+
+    // If this property is defined inside a nested type 
+    // (like a struct inside a MonoBehaviour), look for
+    // our condition field inside the same nested instance.
+    string thisPropertyPath = property.propertyPath;
+    int last = thisPropertyPath.LastIndexOf('.');
+    if (last > 0) {            
+        string containerPath = thisPropertyPath.Substring(0, last + 1);
+        conditionPath = containerPath + conditionPath;
+    }
+
+    // Get the SerializedProperty representing the field that is our criterion.
+    var conditionProperty = property.serializedObject.FindProperty(conditionPath);
+
+    // For now, we'll only support bool criteria, and default to visible if there's a problem.
+    if (conditionProperty == null || conditionProperty.type != "bool")
+        return true;
+
+    // Use the condition property's boolean value to drive visibility.
+    return conditionProperty.boolValue;
+}
+
+public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
+    if(ShouldShow(property))
+        EditorGUI.PropertyField(position, property, label, true);
+}
+
+public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
+    if (ShouldShow(property)) {            
+        // Provision the normal vertical spacing for this control.
+        return EditorGUI.GetPropertyHeight(property, label, true);
+    } else {
+        // Collapse the unseen derived property.
+        return -EditorGUIUtility.standardVerticalSpacing;            
+    }
+}
+                                    </pre></code>
+                                    <p class="mb-4 text-white" align="left">This code snippet is the example of my ConditionalProperty attribute in use, it checks for a bool to be checked in the editor and if so it will dynamically change the inspector to match your selection.</p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">[Header("Weapon Type Attributes")]
+                                        
+[Header("Weapon Type")]
+[Tooltip(
+    "Enable one of these to define the type and to enable to attributes for that type of weapon. | CHOOSE ONE")]
+public bool isRapidShot;
+public bool isScatterShot;
+public bool isChargeShot;
+//public bool isMissile;
+public bool isFlamethrower;
+    
+[Header("Rapid Shot Attributes")]
+[ConditionalProperty("isRapidShot")]
+public float dmg;
+[ConditionalProperty("isRapidShot")]
+public float accuracy;
+[ConditionalProperty("isRapidShot")]
+public float decay;
+[ConditionalProperty("isRapidShot")]
+public float bulletScale = 1f;
+
+[Header("Scatter Shot Attributes")]
+[ConditionalProperty("isScatterShot")]
+public float buckShotCount;
+[ConditionalProperty("isScatterShot")]
+public float buckShotDmg;
+[ConditionalProperty("isScatterShot")]
+public float buckShotDirRandAmt;
+[ConditionalProperty("isScatterShot")]
+public float buckShotFireRate;
+
+[Header("Charge Shot Attributes")]
+[ConditionalProperty("isChargeShot")]
+public float chargeShotDmg;
+[ConditionalProperty("isChargeShot")]
+public float chargeShotAccuracy;
+[ConditionalProperty("isChargeShot")]
+public float chargeShotDecay;
+[ConditionalProperty("isChargeShot")]
+public float chargeShotFireRate;
+
+[Header("Flamethrower Attributes")]
+[ConditionalProperty("isFlamethrower")]
+public float throwerShotCount;
+[ConditionalProperty("isFlamethrower")]
+public float throwerShotDmg;
+[ConditionalProperty("isFlamethrower")]
+public float throwerShotDirRandAmt;
+[ConditionalProperty("isFlamethrower")]
+public float throwerShotFireRate;
+                                    </pre></code>
+                                    <p align="left">These two screen shots below take that conditional operator and display the weapons stats where if you select a certain type of shot you get seperate settings to modify and setup.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/RapidFireSO.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/FlameThrowerSO.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://store.steampowered.com/app/1364710/Skycadia/'">
+                                        <i class="fa-brands fa-steam"></i>
+                                        See it on Steam <b></b>
+                                    </button>
+                                    &nbsp;
+                                    &nbsp;
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://store.steampowered.com/app/1364710/Skycadia/'">
+                                        <i class="fa-brands fa-xbox"></i>
+                                        See it on Xbox <b></b>
+                                    </button>
+                                    &nbsp;
+                                    &nbsp;
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://store.steampowered.com/app/1364710/Skycadia/'">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        See it on Nintendo Switch <b></b>
+                                    </button>
+                                    <br/>
+                                    <br/>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://skycadia.com'">
+                                        <i class="fa-solid fa-plus"></i>
+                                        Visit <b>Skycadia.com</b>
+                                    </button>
+                                    &nbsp;
+                                    &nbsp;
                                     <button class="btn btn-primary" data-bs-dismiss="modal" onclick="document.getElementById('SkycadiaTrailer').pause();">                                        
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
-                                    </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://skycadia.com'">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Visit <b>Skycadia.com</b>
                                     </button>
                                 </div>
                             </div>
@@ -247,8 +396,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <!-- Portfolio Modal 2 - Melee Combat System-->
+        <div class="portfolio-modal modal fade text-white" id="portfolioModalCC" tabindex="-1" aria-labelledby="portfolioModalCC" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -257,38 +406,63 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Magical Horde Shooter</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">CC &bull; Studio Nisse</h2>
+                                    <br/>
+                                    <p>Currently a very early work in progress for Studio Nisse, working with the same multidiceplinary team of Skycadia.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Magic Horde Shooter Demo.gif" alt="..." />
-                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Progression<hr/></h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/singleplayer.gif" alt="..." />
-<!--                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Multiplayer Prototype<hr/></h3>-->
-<!--                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayer.gif" alt="..." />-->
+                                    <h3>Responsibilities</h3>
+                                    <li align="left">Create the technical documents required. This includes research I have done, requirements of systems this game will need to run on, and the requirements the game must have.</li>
+                                    <p align="left">&emsp;&emsp; So far in this development I have done plenty of research into open world development, and the addressables system unity created.</p>
+                                    <li align="left">Creating a tool for animal creation.</li>
+                                    <p align="left">&emsp;&emsp; Our game has animals you can ride and size, using an asset to do the heavy work for us it requires some setup, I am creating this tool to take the initial setup and just spit out the result..</p>
+                                    <li align="left">Subject matter expert for GIT.</li>
+                                    <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to commit, push, fetch, create and branch, and merge changes.</p>
+                                    <hr/>
+                                    <h3>Animal Creation Tool</h3>
+                                    <p>The Animal Creation Tool is currently unfinished at this time but the tool is to dramatically reduce time spent on setting up the animal characters for the game.</p>
+                                    <p align="left">Features and Benifits</p>
+                                    <li align="left">Faster Iteration</li>
+                                    <li align="left">Automated Creation</li>
+                                    <li align="left">Editablity</li>
+                                    <br/>
+                                    <p align="left">These three points are key to the reason why this tool is so critical, the tool will allow us to create animals with customized settings and attributes faster and simpler, as the current proccess is time consuming and overcombant. The creation of each animal will be automatic, you feed the values and mesh into the tool and the tool will create and populate everything nassary for that animal to work only then will you need to go in and edit the finishing touches. Since the animal is created with attributes already setup, changing them will be a hassle, so I came up with a hassle free solution, reimport the created animal and select the setting desired, once agian it will ouput your edited animal and you are off to the races!</p>
+
+                                    <sup>Unfortunatly this tool is very early in development. So all I have is a flowchart to show my thought proccess.</sup>
+
+                                    <p>Below is a flowchart for the tool.</p>
+                                    <i>CRTL + Mouse wheel to zoom in and out.</i>
+                                    <embed src="assets\flowcharts\AnimalTool.pdf#toolbar=0&navpanes=0&zoom=45"
+                                                       frameborder="0" width="100%" height="500" >
+                                    <br/>
+                                    <hr/>
+                                    <h3>Technical Research</h3>
+                                    <p>I have done plenty of research for this project including open world infrastructure, this includes worlds streaming, chunck loading, LODs, etc. I have also been researching Unity's Addressables, its their remote asset delievery and storage system to my understanding, but all of this research is culminating in the grand view of the project and the best way and methods of creation.</p>
+                                    <br/>
+                                    <br/>
                                     <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Magical Horde Shooter</b>, is a game sandbox to experiment and familiarize myself with the Unity Game Engine. <p align="left" class="text-white"><br/>&bull; Custom Player Movment<br/>&bull; Cinemachine Camera<br/>&bull; Unity's New Input System<br/>&bull; Navmesh AI Movement<br/>&bull; Raycasts<br/>&bull; UI</p></p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://github.com/SireNiklas/Bit-by-Byte'">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Visit <b>Magical Horde Shooter</b> Github page.
-                                    </button>
+                                    <!-- Portfolio Modal - Image-->
+                                    <!-- &nbsp;&nbsp;<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#flowchartModal1">
+                                        <i class="fa-solid fa-diagram-project"></i>
+                                        View the Animal Creation Tool
+                                    </button> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+        </div> 
+        <!-- Portfolio Modal 1 | Projectile Fight-->
+        <div class="portfolio-modal modal fade text-white" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -297,7 +471,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Projectile Fight</h2>
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0">Projectile Fight</h2>
+                                    <br/>
+                                    <p class="mb-4" align="left">Multiplayer FPS Prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -307,10 +483,153 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayerpfjoineddemo.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Projectile Fight</b>, is a work in progress currently planned for release on Steam. Everything so far has been developed by me using Facepunch Steamworks API and Unity's Netcode for Gameobjects. Currently in its state it only supports the PC platform and works with steams lobbying system to create lobbies where the host and client can join and play together.</b></p>
+
+                                    <h6>FEATURES:</h6>
+                                    <li align="left">Establish a connection between two users simultainiously. AKA Lobby</li>
+                                    <p align="left">&emsp;&emsp; Each user can create a lobby, and another can join that said lobby.</p>
+                                    <li align="left">Steam connectivty, to allow players to join eatchother with ease.</li>
+                                    <p align="left">&emsp;&emsp; Players can get invites, or join off of their friends to easily connect, and enjoy. (Side note: this also allows for Steams NATpunchthrough which allows connection without portforwarding.</p>
+                                    <li align="left">Server Authoritative for competitive gameplay.</li>
+                                    <p align="left">&emsp;&emsp; Keep all players in sync of movement, and allow the server to dictate what goes and what doesn't.</p>
+
+                                    <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Steamworks. The issues I had were to get the data from the Steam API to interface properlly with the Unity objects. <br/><br/> The code snippet below displays how I had displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides, this way I could filter my lobbies out from any others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attatched, thus using Unity's UI ToolKit to display in their list view each item that it has grabbed it giving the list the data it needs to present.<br/><br/> <sup>Asteriks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">if (SteamManager.Instance.lobbiesList != null)
+{
+
+    //Create a list of data.In this case, numbers from 1 to 1000.
+    foreach (Lobby lobby in SteamManager.Instance.lobbiesList.ToList())
+    {
+
+        SteamManager.Instance.activeLobbies.Add(lobby);
+        Debug.Log(SteamManager.Instance.activeLobbies.Count);
+
+    }
+
+    int i = 0;
+    
+    int itemCount = SteamManager.Instance.activeLobbies.Count;
+    var items = new List<Tuple<string, SteamId, int, int>>(itemCount);
+    for (i = 0; i < itemCount; i++)
+    {
+        items.Add(Tuple.Create(SteamManager.Instance.activeLobbies[i].GetData("lobbyName"), SteamManager.Instance.activeLobbies[i].Id, SteamManager.Instance.activeLobbies[i].MemberCount, SteamManager.Instance.activeLobbies[i].MaxMembers));
+        Debug.Log(items[i].Item1);
+        //Debug.Log(activeLobbies[i]);
+    }
+
+    // The "makeItem" function is called when the
+    // ListView needs more items to render.
+    Func<VisualElement> makeItem = () =>
+    {
+        var root = new VisualElement();
+        var label = new Label();
+        root.Add(label);
+        return root;
+    };
+
+    // As the user scrolls through the list, the ListView object
+    // recycles elements created by the "makeItem" function,
+    // and invoke the "bindItem" callback to associate
+    // the element with the matching data item (specified as an index in the list).
+    Action<VisualElement, int> bindItem = (e, i) =>
+    {
+        var label = e.Q<*Label*>();
+        label.text = items[i].Item1 + " | Members: " + items[i].Item3 + "/" + items[i].Item4;
+    };
+
+    // Provide the list view with an explict height for every row
+    // so it can calculate how many items to actually display
+    const int itemHeight = 64;
+
+    var listView = new ListView(items, itemHeight, makeItem, bindItem);
+
+    listView.onItemsChosen += objects => SteamManager.Instance.JoinLobby(items[listView.selectedIndex].Item2);
+    //SteamManager.Instance.currLobby = items[listView.selectedIndex].Item2;
+    //listView.onSelectionChange += objects => Debug.Log(items[listView.selectedIndex].ToString());
+
+    // List Style
+    listView.showAlternatingRowBackgrounds = AlternatingRowBackground.All;
+    listView.selectionType = SelectionType.Single;
+    listView.style.flexGrow = 1.0f;
+    listView.style.fontSize = 48f;
+    listView.style.justifyContent = Justify.Center;
+    listView.showBoundCollectionSize = true;
+
+    body.Add(listView);
+}                                   
+                                    </pre></code>
+                                    <br/><br/><hr/>
+                                    <p class="mb-4 text-white" align="left">Server prediction and Client Reconcilieation were my too main problems that I had to accomplish in which the below does just that. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the clients transform to that of the servers transform.</p>
+                                    <hr/><code><pre class="mb-4 text-white" align="left">void OnServerStateChanged(TransformState previousState, TransformState serverState) {
+if (!IsLocalPlayer) return;
+
+if (_previousTransformState == null) {
+    _previousTransformState = serverState;
+}
+
+TransformState calculatedState = _transformStates.First(localState => localState.Tick == serverState.Tick);
+
+if (calculatedState.Position != serverState.Position) {
+    Debug.Log("CORRECTING CLIENT POS!");
+        
+    //Teleport the player to server pos.
+    TeleportPlayer(serverState);
+
+    //Replay the inputs that happened after. | Change to for loop if needed. (Not optimised as is.
+    IEnumerable<InputState> inputs = _inputStates.Where(input => input.Tick > serverState.Tick);
+
+    // Lazy way of sorting, algorithm would be better.
+    inputs = from input in inputs orderby input.Tick select input;
+
+        foreach (InputState inputState in inputs) {
+            MovePlayer(inputState.movementInput);
+            RotatePlayer(inputState.lookInput);
+
+            TransformState newTranformState = new TransformState()
+            {
+                Tick = inputState.Tick,
+                Position = transform.position,
+                Rotation = transform.rotation,
+                HasStartedMoving = true
+
+            };
+
+            // Could be written better once I understand how to write it better.
+            for (int i = 0; i < _transformStates.Length; i++)
+            {
+                if (_transformStates[i].Tick == inputState.Tick)
+                {
+                    _transformStates[i] = newTranformState;
+                    break;
+                }
+            }
+        }
+    }
+}
+
+private void TeleportPlayer(TransformState state)
+{
+    _controller.enabled = false;
+    transform.position = state.Position;
+    transform.rotation = state.Rotation;
+    _controller.enabled = true;
+
+    for (int i = 0; i < _transformStates.Length; i++)
+    {
+        if (_transformStates[i].Tick == state.Tick)
+        {
+            _transformStates[i] = state;
+            break;
+        }
+    }
+}
+                                    </pre></code>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
+                                    </button>
+                                    &nbsp;&nbsp;<button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.open('https://github.com/SireNiklas/Projectile-Fight/tree/Server-Authority-Migration', '_blank')">
+                                        <i class="fab fa-fw fa-github"></i>
+                                        Visit <b>Projectile Fight</b> Github page.
                                     </button>
                                 </div>
                             </div>
@@ -319,8 +638,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+        <!-- Portfolio Modal 2 - Melee Combat System-->
+        <div class="portfolio-modal modal fade text-white" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -329,7 +648,9 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Melee Combat System</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Unreal Engine 5 &bull; Melee Combat System</h2>
+                                    <br/>
+                                    <p>Recreated Wukong melee combat from Paragon using the released asset from Epic Games <br/> Expanded on this project by creating a few different shaders.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -337,19 +658,28 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
+                                    <p>These are my explorations through Unreal Engine 5, this section demonstrates the areas of Unreal that I have worked with and things that I have created.</p>
+                                    <hr/>
+                                    <h3>Battery Collector</h3>
+                                    <p>Battery Collector is a project I made using a tutorial, utilizing C++ and Blueprints.</p>
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Unreal Game Demo.gif" alt="..." />
+                                    <hr/>
+                                    <h3>Melee Combat System</h3>
+                                    <p>Created using C++ and Blueprints, I setup the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
-                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Other Protoypes<hr/></h3>
+                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Shaders<hr/></h3>
+                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I setup a pixelated shader, toon/cel shader, and </p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/8bitTest.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Toon Shader.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToonCharacter.png" alt="..." />
+                                    <br/>
                                     <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Melee Combat System</b>, was created learn the Unreal Engine 5 Game Engine. I used the <b>Paragon Wukong Character Asset and the base Attack System</b> and using a balance between C++ and Blueprints I was able to recreate the movement and attacks of the original character.<br/><br/>Devling into a little bit of shader work I created a cel shader with varying layers and a line shader that added a borderlands line effect around the borders of the game objects.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://github.com/SireNiklas/MeleeCombatSystem'">
-                                        <i class="fas fa-xmark fa-fw"></i>
+                                    &nbsp;&nbsp;<button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.open('https://github.com/SireNiklas/MeleeCombatSystem', '_blank')">
+                                        <i class="fab fa-fw fa-github"></i>
                                         Visit <b>Melee Combat System</b> Github page.
                                     </button>
                                 </div>
@@ -359,8 +689,8 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <!-- Portfolio Modal - PORTFOLIO -->
+        <div class="portfolio-modal modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModal" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -369,7 +699,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Monster Bash</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">NICHOLAS HARRIS - RESUME</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -377,130 +707,22 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Monster Bash Demo.gif" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Monster Bash</b>, prototyped this game to develop more of an understanding of animation and it ties in with collisions.</b></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://sirniklas.itch.io/monster-bash'">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Visit <b>Monster Bash</b> Itch.io page.
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Block Run</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Block Run Demo.gif" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Block Run</b>, Started me off into the game industry, it was the first gameloop I had created, even though I messed with game development prior to this I never really created a finished gameloop</b></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://sirniklas.itch.io/block-run'">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Visit <b>Block Run</b> Itch.io page.
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Battery Collector</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Unreal Game Demo.gif" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Battery Collector</b>, was created off of a tutorial I followed, it was the second project I created in Unreal Engine 5 and that gave a more familierity with the Engine. I now feel more confident with the Engine and how its compnents work.</b></p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 7-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Godot Protoype</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Godot Demo.gif" alt="..." />
-                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Progression<hr/></h3>
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/GodotIslands.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/TestIslands Godot.png" alt="..." />
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Heightmap_Demo.gif" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <hr/><p class="mb-4 text-white" align="left"><b>Godot Protoype</b></hr>, was test of Godot 4.0 for use in the future. I had previously use Godot 3.4 and up, but due to wanting to focus more into the 3D game world I wanted an Engine that had Vulkan support and Godot 4.0 proved to be a challenge. Godot 4 at the time had a lack of documentation and tutorials, I was able to grab from my prior knowladge of Godot 3 and create a terrain generator and then, that changed to floating islands for a game I set to make, unfortunatly Godot was not up for the task and I could not complete that game.<br/><br/>The progression includes a terrain completely generated from code using a height map of my local area and has a collision set and a mesh added.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                    <div class="modal-body">
 
-
+                                        <embed src="assets/resume\Nicholas Harris Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                                               frameborder="0" width="100%" height="700">
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script>
         $(document).ready(function() {
