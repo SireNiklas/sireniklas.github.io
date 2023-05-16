@@ -113,7 +113,7 @@
                     </div>
                     <p class="text-white">Projectile Fight</p>
                 </div>
-                <!-- Portfolio Item 3 | Melee Combat System 
+                <!-- Portfolio Item 3 | Melee Combat System -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -122,7 +122,7 @@
                         <img class="img-fluid" src="assets/img/portfolio/UE5.jpg" alt="..." />
                     </div>
                     <p class="text-white">Unreal Engine 5 Exploration</p>
-                </div>-->
+                </div>
         </section>
         
         <!-- About Section-->
@@ -138,7 +138,7 @@
                         </div>
                         <!-- About Section Content-->
                         <div class="row">
-                            <div class="col-lg-4 ms-auto"><p class="lead">At the age of 7 I was introduced to Java using Eclipse through my father, the programming field has held my interest ever since. Having become an avid game player and developer, it’s become paramount to me to provide the support and skills needed to develop games I can be proud of. Ultimately, game programming was the most direct way to mix my passion for gaming and programming together to create unbelievable worlds.</p></div>
+                            <div class="col-lg-4 ms-auto"><p class="lead">At the age of 7 I was introduced to Java using Eclipse through my father &#8212; the programming field has held my interest ever since. Having become an avid game player and developer, it’s become paramount to me to provide the support and skills needed to develop games I can be proud of. Ultimately, game programming was the most direct way to mix my passion for gaming and programming together to create unbelievable worlds.</p></div>
                             <div class="col-lg-4 me-auto"><p class="lead">Within gaming and programming, the role of support has always been a forte. In the end though the goal is to reach a position that allows the opportunity to lead and manage a team of my own. My current skillset includes C++, C#, Python, Godot, Unity Engine and Unreal Engine 5 which have allowed me to begin developing my own game concepts.</p></div>
                         </div>
                         <div class="text-center mt-4">
@@ -155,6 +155,7 @@
             <div class="container"><small>&copy; 2023 sireniklas.github.io</small></div>
         </div>
 
+<!-- #region Skycadia -->
         <!-- Portfolio Modals-->
         <!-- Portfolio Highlight-->
         <div class="portfolio-modal modal fade text-white" id="portfolioHighlight" tabindex="-1" aria-labelledby="portfolioHighlight" aria-hidden="true">
@@ -165,6 +166,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
+                                    <!-- #region Skycadia Title -->
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Skycadia</h2>
                                     <br/>
@@ -180,23 +182,27 @@
                                         <source src="assets/img/portfolio/Skycadia Nintendo Switch Trailer-(720p30).mp4" type="video/mp4" />
                                       </video>
                                     <!-- Portfolio Modal - Text-->
+                                    <!-- #endregion -->
                                    <hr/>
+                                   <!-- #region Skycadia Responsibilities -->
                                     <h3>Responsibilities</h3>
-                                    <li align="left">Created a flexible editor tool for the dialogue system.</li>
-                                    <p align="left">&emsp;&emsp; This tool allowed a drag and drop approach for creating dialogue nodes in the game.</p>
+                                    <li align="left">Created a flexible editor tool for implementing Lore Points into the in-game world.</li>
+                                    <p align="left">&emsp;&emsp; This tool uses Prefabs and ScritableObjects to easily create Lore points that popup information and dialogue for the player.</p>
                                     <li align="left">Created a designer friendly approach to create stats for weapons and ships.</li>
                                     <p align="left">&emsp;&emsp; Creating this small tool helped speed up the creation proccess immensely, create a ship was just a few clicks and a dragon and a drop away.</p>
                                     <li align="left">Subject matter expert for GIT.</li>
                                     <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to commit, push, fetch, create and branch, and merge changes.</p>
                                     <hr/>
-                                    <h3>Dialogue Tool</h3>
+                                    <!-- #endregion -->
+                                    <!-- #region Skycadia LorePoint Tool -->
+                                    <h3>Lore Point Tool</h3>
                                     <p>This tool makes creating what we called Lore Points easier to insert into levels, with the examples below I created the LorePoint script in which allows the already created dialgue system to be modular and used anywhere.</p>
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/skycadiatoolfunction.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Skycadia Lorepoint Screenshot.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LorePointCreationTool.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4" align="left">This is the script that made the whole system modular, instead of creating a single set of dialogue that couldn't be reused as it was only activated when you spawn, this takes a more node approach in which the user will spawn a node/gameobject which has its own data, that data is read from this script effectivly making this script the core of my system.</sup></p>
+                                    <p class="mb-4" align="left">This is the script that made the whole system modular, instead of creating a single Lore point that couldn't be reused as it was only activated when you spawn, this takes a more modular approach in which the user will spawn a module/GameObject which has its own data, that data is read from this script effectivly making this script the core of my system.</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
 {
     if (other.gameObject.CompareTag("TargetableEntity"))
@@ -207,7 +213,7 @@
     }
 }                          
                                     </pre></code>
-                                    <hr/><p class="mb-4" align="left">The snippet below will allow the object to be spawned from a menu item where the camera is currently looking. So instead of created a gameobject and filling that object with components it needs, it can be spawn for a meny preconfigured.</sup></p>
+                                    <hr/><p class="mb-4" align="left">The snippet below will allow the object to be spawned from a menu item where the camera is currently looking. So instead of created a GameObject and filling that object with components it needs, it can be spawn from a menu preconfigured.</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
                                         [MenuItem("Skycadia/Create LorePoint")]
 public static void CreateLorePoint(MenuCommand menuCommand)
@@ -252,17 +258,23 @@ void OnDrawGizmosSelected()
     Gizmos.DrawSphere(transform.position, GetComponent<SphereCollider>().radius * transform.localScale.x);
 }                     
                                     </pre></code>
+                                    <!-- #endregion -->
                                     <hr/>
-                                    <h3>Designer friendly Ship & Pilot Stats</h3>
-                                    <p>This system was designed to make creating pilots and ships easier and more organised, but to allow non programmers to also create and modify the stats that interfaced with the code aswell.</p>
+                                    <!-- #region Skycadia Ship & Pilot Stats -->
+                                    <h3>Designer &hyphen; Friendly Ship & Pilot Stats</h3>
+                                    <p>I developed this system to allow designers to create and modify pilots and ships easily. The pilot and ships system was origionally hard coded but due to the team we had to create an easier and faster iterative way.</p>
                                     <!-- Portfolio Modal - Image-->
-                                    <p align="left">These screen shots below are examples of my designer friendly stats system. It allows a plug and play style of development, so if a designer or artist needs to make a quick change they have a quick and easy way to do so.</p>
-                                    <p align="left">The base of the system are Scriptable Objects. Scriptable Objects are cross scene data sets used for storing data and creating a simple way to edit the data instead of hardcoding it.</p>
+                                    <p align="left">The system is based on Scriptable Objects. Scriptable Objects are cross scene data sets used for storing data and creating a simple way to edit the data instead of hardcoding it.</p>
+                                    <p align="left">The screen shots below are examples of my designer &hyphen; friendly stats system. It allows non&hyphen;programmers to iterate faster, so if a designer or artist needs to make a change they have a quick and easy way to do so.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersSO.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersShipSO.png" alt="..." />
+                                    <!-- #endregion -->
                                     <hr/>
-                                    <h3>Designer friendly Weapon Stats</h3>
-                                    <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exsists, looks like [newAttribute]. This attribute acts like a condition operator in which it will hide or show something depending on a boolean.</sup></p>
+                                    <!-- #region Skycadia Weapon Stats -->
+                                    <h3>Designer &hyphen; Friendly Weapon Stats</h3>
+                                    <!-- TODO TODO TODO | REWORD AND READ ALLOWED EXPLAIN-->
+                                    <p class="mb-4" align="left">The orignal system was hard coded *MORE ON THE WEAPONS*.</sup></p>
+                                    <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exists, looks like [newAttribute]. This attribute acts like a condition operator in which it will hide or show something depending on a boolean.</sup></p>
                                     <code><pre class="mb-4 text-white" align="left">    // Determine whether this field should be visible.
 // (We could probably do some caching here...)
 bool ShouldShow(SerializedProperty property) {
@@ -305,6 +317,7 @@ public override float GetPropertyHeight(SerializedProperty property, GUIContent 
     }
 }
                                     </pre></code>
+                                    <!-- TODO TODO TODO | REWORD AND READ ALLOWED EXPLAIN-->
                                     <p class="mb-4 text-white" align="left">This code snippet is the example of my ConditionalProperty attribute in use, it checks for a bool to be checked in the editor and if so it will dynamically change the inspector to match your selection.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">[Header("Weapon Type Attributes")]
                                         
@@ -360,7 +373,13 @@ public float throwerShotFireRate;
                                     <p align="left">These two screen shots below take that conditional operator and display the weapons stats where if you select a certain type of shot you get seperate settings to modify and setup.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/RapidFireSO.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/FlameThrowerSO.png" alt="..." />
+                                    <!-- #endregion -->
+                                    <!-- TODO TODO TODO-->
+                                    <!-- #region Skycadia Conclusion -->
+                                    <p align="left">ADD CONCLUSTION</p>
+                                    <!-- #endregion -->
                                     <!-- Portfolio Modal - Text-->
+                                    <!-- #region Skycadia Buttons -->
                                     <button class="btn btn-primary" data-bs-dismiss="modal" onclick="window.location.href='https://store.steampowered.com/app/1364710/Skycadia/'">
                                         <i class="fa-brands fa-steam"></i>
                                         See it on Steam <b></b>
@@ -389,6 +408,7 @@ public float throwerShotFireRate;
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
+                                    <!-- #endregion -->
                                 </div>
                             </div>
                         </div>
@@ -396,6 +416,9 @@ public float throwerShotFireRate;
                 </div>
             </div>
         </div>
+<!-- #endregion -->
+        
+<!-- #region Critter City -->
         <!-- Portfolio Modal 2 - Melee Combat System-->
         <div class="portfolio-modal modal fade text-white" id="portfolioModalCC" tabindex="-1" aria-labelledby="portfolioModalCC" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -405,6 +428,7 @@ public float throwerShotFireRate;
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
+                                    <!-- #region Critter City Title -->
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">CC &bull; Studio Nisse</h2>
                                     <br/>
@@ -415,14 +439,19 @@ public float throwerShotFireRate;
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
+                                    <!-- #endregion -->
+                                    <!-- ADD SETUP WITH AND CONFIGUREATION  | TALK ABOUT PROJECT CREATION -->
+                                    <!-- #region Critter City Responsibility -->
                                     <h3>Responsibilities</h3>
-                                    <li align="left">Create the technical documents required. This includes research I have done, requirements of systems this game will need to run on, and the requirements the game must have.</li>
+                                    <li align="left">Created the technical documents required. This includes research I have done, requirements of systems this game will need to run on, and the requirements the game must have.</li>
                                     <p align="left">&emsp;&emsp; So far in this development I have done plenty of research into open world development, and the addressables system unity created.</p>
-                                    <li align="left">Creating a tool for animal creation.</li>
-                                    <p align="left">&emsp;&emsp; Our game has animals you can ride and size, using an asset to do the heavy work for us it requires some setup, I am creating this tool to take the initial setup and just spit out the result..</p>
+                                    <li align="left">Created a tool for animal creation.</li>
+                                    <p align="left">&emsp;&emsp; Our game has animals you can ride on and modify the scale, using an asset to do the heavy work for us it requires some setup, I am creating this tool to take the initial setup and just spit out the result..</p>
                                     <li align="left">Subject matter expert for GIT.</li>
                                     <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to commit, push, fetch, create and branch, and merge changes.</p>
+                                    <!-- #endregion -->
                                     <hr/>
+                                    <!-- #region Critter City Animal Creation Tool -->
                                     <h3>Animal Creation Tool</h3>
                                     <p>The Animal Creation Tool is currently unfinished at this time but the tool is to dramatically reduce time spent on setting up the animal characters for the game.</p>
                                     <p align="left">Features and Benifits</p>
@@ -438,29 +467,32 @@ public float throwerShotFireRate;
                                     <i>CRTL + Mouse wheel to zoom in and out.</i>
                                     <embed src="assets\flowcharts\AnimalTool.pdf#toolbar=0&navpanes=0&zoom=45"
                                                        frameborder="0" width="100%" height="500" >
+                                    <!-- #endregion -->
                                     <br/>
                                     <hr/>
+                                    <!-- #region Critter City Technical Research -->
                                     <h3>Technical Research</h3>
                                     <p>I have done plenty of research for this project including open world infrastructure, this includes worlds streaming, chunck loading, LODs, etc. I have also been researching Unity's Addressables, its their remote asset delievery and storage system to my understanding, but all of this research is culminating in the grand view of the project and the best way and methods of creation.</p>
+                                    <!-- #endregion -->
                                     <br/>
                                     <br/>
                                     <!-- Portfolio Modal - Text-->
+                                    <!-- #region Critter City Buttons -->
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
                                     </button>
-                                    <!-- Portfolio Modal - Image-->
-                                    <!-- &nbsp;&nbsp;<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#flowchartModal1">
-                                        <i class="fa-solid fa-diagram-project"></i>
-                                        View the Animal Creation Tool
-                                    </button> -->
+                                    <!-- #endregion -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
+<!-- #endregion -->
+
+<!-- #region Unity Networked FPS -->
         <!-- Portfolio Modal 1 | Projectile Fight-->
         <div class="portfolio-modal modal fade text-white" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -470,9 +502,12 @@ public float throwerShotFireRate;
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
+                                    <!-- #region Unity Networked FPS Title -->
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-uppercase mb-0">Projectile Fight</h2>
+                                    <h2 class="portfolio-modal-title text-uppercase mb-0">Unity Networked FPS</h2>
                                     <br/>
+                                    <!-- TODO TODO TODO | UNITY NETWORKING AND STEAM API -->
+                                    <!-- REWORD THIS BELOW -->
                                     <p class="mb-4" align="left">Multiplayer FPS Prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
@@ -483,20 +518,23 @@ public float throwerShotFireRate;
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/multiplayerpfjoineddemo.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-
+                                    <!-- #endregion -->
+                                    <!-- #region Unity Networked FPS Features-->
                                     <h6>FEATURES:</h6>
+                                    <!-- REWRITE AND ELABERATE | HOW DID I MAKE THIS WORK? -->
                                     <li align="left">Establish a connection between two users simultainiously. AKA Lobby</li>
                                     <p align="left">&emsp;&emsp; Each user can create a lobby, and another can join that said lobby.</p>
                                     <li align="left">Steam connectivty, to allow players to join eatchother with ease.</li>
                                     <p align="left">&emsp;&emsp; Players can get invites, or join off of their friends to easily connect, and enjoy. (Side note: this also allows for Steams NATpunchthrough which allows connection without portforwarding.</p>
                                     <li align="left">Server Authoritative for competitive gameplay.</li>
                                     <p align="left">&emsp;&emsp; Keep all players in sync of movement, and allow the server to dictate what goes and what doesn't.</p>
-
+                                    <!-- #endregion -->
+                                    <!-- #region Unity Networked FPS Lobby and Connections -->
                                     <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Steamworks. The issues I had were to get the data from the Steam API to interface properlly with the Unity objects. <br/><br/> The code snippet below displays how I had displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides, this way I could filter my lobbies out from any others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attatched, thus using Unity's UI ToolKit to display in their list view each item that it has grabbed it giving the list the data it needs to present.<br/><br/> <sup>Asteriks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">if (SteamManager.Instance.lobbiesList != null)
 {
 
-    //Create a list of data.In this case, numbers from 1 to 1000.
+    //Create a list of data. In this case, numbers from 1 to 1000.
     foreach (Lobby lobby in SteamManager.Instance.lobbiesList.ToList())
     {
 
@@ -623,6 +661,11 @@ private void TeleportPlayer(TransformState state)
     }
 }
                                     </pre></code>
+                                    <!-- #endregion -->
+                                    <!-- #region Unity Networked FPS Conclusion -->
+                                    <p class="mb-4 text-white" align="left">ADD CONCLUSTION</p>
+                                    <!-- #endregion -->
+                                    <!-- #region Unity Networked FPS Buttons -->
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -631,6 +674,7 @@ private void TeleportPlayer(TransformState state)
                                         <i class="fab fa-fw fa-github"></i>
                                         Visit <b>Projectile Fight</b> Github page.
                                     </button>
+                                    <!-- #endregion -->
                                 </div>
                             </div>
                         </div>
@@ -638,6 +682,7 @@ private void TeleportPlayer(TransformState state)
                 </div>
             </div>
         </div>
+<!-- #endregion -->
         <!-- Portfolio Modal 2 - Melee Combat System-->
         <div class="portfolio-modal modal fade text-white" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
