@@ -273,7 +273,7 @@ void OnDrawGizmosSelected()
                                     <!-- #region Skycadia Weapon Stats -->
                                     <h3>Designer &hyphen; Friendly Weapon Stats</h3>
                                     <!-- TODO TODO TODO | REWORD AND READ ALLOWED EXPLAIN-->
-                                    <p class="mb-4" align="left">The orignal system was hard coded *MORE ON THE WEAPONS*.</sup></p>
+                                    <p class="mb-4" align="left">The orignal system had hard coded values that had to be changed from within the scripts.</sup></p>
                                     <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exists, looks like [newAttribute]. This attribute acts like a condition operator in which it will hide or show something depending on a boolean.</sup></p>
                                     <code><pre class="mb-4 text-white" align="left">    // Determine whether this field should be visible.
 // (We could probably do some caching here...)
@@ -317,8 +317,7 @@ public override float GetPropertyHeight(SerializedProperty property, GUIContent 
     }
 }
                                     </pre></code>
-                                    <!-- TODO TODO TODO | REWORD AND READ ALLOWED EXPLAIN-->
-                                    <p class="mb-4 text-white" align="left">This code snippet is the example of my ConditionalProperty attribute in use, it checks for a bool to be checked in the editor and if so it will dynamically change the inspector to match your selection.</p>
+                                    <p class="mb-4 text-white" align="left">This code snippet is an example of my ConditionalProperty attribute in use, it checks for a boolean value and according to that boolean state the inspector will dynamically change to match your selection. This way, unnecessary values are hidden and makes it easier to read at a glance.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">[Header("Weapon Type Attributes")]
                                         
 [Header("Weapon Type")]
@@ -370,13 +369,12 @@ public float throwerShotDirRandAmt;
 [ConditionalProperty("isFlamethrower")]
 public float throwerShotFireRate;
                                     </pre></code>
-                                    <p align="left">These two screen shots below take that conditional operator and display the weapons stats where if you select a certain type of shot you get seperate settings to modify and setup.</p>
+                                    <p align="left">These two screen shots below take that conditional operator and display the weapons stats. If you were to select a certain type of shot you get seperate settings to modify and setup.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/RapidFireSO.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/FlameThrowerSO.png" alt="..." />
                                     <!-- #endregion -->
-                                    <!-- TODO TODO TODO-->
                                     <!-- #region Skycadia Conclusion -->
-                                    <p align="left">ADD CONCLUSTION</p>
+                                    <p align="left">In conclustion I had created tools ontop of the existing systems to make later modification and create to the systems easier, simpler and quicker. This proved to be a great experience for the non-programmers on the team that had to change the values to introduce new characters, weapons, and ships as well as balance the current ones.</p>
                                     <!-- #endregion -->
                                     <!-- Portfolio Modal - Text-->
                                     <!-- #region Skycadia Buttons -->
@@ -472,7 +470,7 @@ public float throwerShotFireRate;
                                     <hr/>
                                     <!-- #region Critter City Technical Research -->
                                     <h3>Technical Research</h3>
-                                    <p>I have done plenty of research for this project including open world infrastructure, this includes worlds streaming, chunck loading, LODs, etc. I have also been researching Unity's Addressables, its their remote asset delievery and storage system to my understanding, but all of this research is culminating in the grand view of the project and the best way and methods of creation.</p>
+                                    <p>I have done plenty of research for this project including open world infrastructure, this includes worlds streaming, chunk loading, LODs, etc. I have also been researching Unity's Addressables, their remote asset delievery and storage system.</p>
                                     <!-- #endregion -->
                                     <br/>
                                     <br/>
@@ -508,7 +506,7 @@ public float throwerShotFireRate;
                                     <br/>
                                     <!-- TODO TODO TODO | UNITY NETWORKING AND STEAM API -->
                                     <!-- REWORD THIS BELOW -->
-                                    <p class="mb-4" align="left">Multiplayer FPS Prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
+                                    <p class="mb-4">Multiplayer FPS Prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -596,7 +594,7 @@ public float throwerShotFireRate;
 }                                   
                                     </pre></code>
                                     <br/><br/><hr/>
-                                    <p class="mb-4 text-white" align="left">Server prediction and Client Reconcilieation were my too main problems that I had to accomplish in which the below does just that. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the clients transform to that of the servers transform.</p>
+                                    <p class="mb-4 text-white" align="left">Server Prediction and Client Reconcilieation were my too main problems that I had to accomplish in which the below does just that. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the clients transform to that of the servers transform.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">void OnServerStateChanged(TransformState previousState, TransformState serverState) {
 if (!IsLocalPlayer) return;
 
@@ -683,7 +681,7 @@ private void TeleportPlayer(TransformState state)
             </div>
         </div>
 <!-- #endregion -->
-        <!-- Portfolio Modal 2 - Melee Combat System-->
+        <!-- UnrealEngine Exploration-->
         <div class="portfolio-modal modal fade text-white" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -693,9 +691,9 @@ private void TeleportPlayer(TransformState state)
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Unreal Engine 5 &bull; Melee Combat System</h2>
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Unreal Engine 5 &bull; Exploration</h2>
                                     <br/>
-                                    <p>Recreated Wukong melee combat from Paragon using the released asset from Epic Games <br/> Expanded on this project by creating a few different shaders.</p>
+                                    <p>This section may seem underdeveloped, but it is just a page of my projects and accomplishments I had made in Unreal Engine 5. Some of these projects use Blueprints, whilst other use C++.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -703,17 +701,15 @@ private void TeleportPlayer(TransformState state)
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <p>These are my explorations through Unreal Engine 5, this section demonstrates the areas of Unreal that I have worked with and things that I have created.</p>
-                                    <hr/>
                                     <h3>Battery Collector</h3>
-                                    <p>Battery Collector is a project I made using a tutorial, utilizing C++ and Blueprints.</p>
+                                    <p>Battery Collector is a project I made using a tutorial, utilizing C++ and Blueprints. I built upon the character class to allow interaction between pickup-able objects aswell as instantiating effects whilst doing so.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Unreal Game Demo.gif" alt="..." />
                                     <hr/>
                                     <h3>Melee Combat System</h3>
-                                    <p>Created using C++ and Blueprints, I setup the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify.</p>
+                                    <p>Created using the Wukong Paragon model free on the Unreal Marketplace, and linking the abilities and effects using C++ and Blueprints, I setup the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify. This was the first ever project I had worked on in Unreal Engine, and the result is pretty clean!</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
                                     <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Shaders<hr/></h3>
-                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I setup a pixelated shader, toon/cel shader, and </p>
+                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I setup a pixelated shader, toon/cel shader, and used my cel shader and adapted it to metalic objects. I learned how shaders interact and work within the Engine, although not very experienced with shaders I have a very nice result that I am happy with.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/8bitTest.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Toon Shader.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToonCharacter.png" alt="..." />
