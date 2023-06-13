@@ -91,7 +91,7 @@
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/SkycadiaCoverPhoto.png" alt="..." />
                         </div>
-                        <p class="text-white">Skycadia | Intership, Dec 2022 - Present</p>
+                        <p class="text-white">Skycadia | Internship, Dec 2022 - Present</p>
                     </div>
                     <!-- Portfolio Highlight | Skycadia -->
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -101,7 +101,7 @@
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/CCCoverPhoto.png" alt="..." />
                         </div>
-                        <p class="text-white">CC - Studio Nisse | Intership, Dec 2022 - Present</p>
+                        <p class="text-white">CC - Studio Nisse | Internship, Dec 2022 - Present</p>
                     </div>
                 <!-- Portfolio Item 2 | Projectile Fight -->
                 <div class="col-md-6 col-lg-4 mb-5">
@@ -170,7 +170,7 @@
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Skycadia</h2>
                                     <br/>
-                                    <p>Skycadia is a retro arcade dogfighter released on Xbox Series X, Nintendo Switch, and Steam that I worked on as a Unity developer. I authored development tools using C# and Rider primarily focused on the creation and systems supporting weapons, ships, and dialogue on the project.</p>
+                                    <p>Skycadia is a retro arcade dogfighter released on Xbox Series X, Nintendo Switch, and Steam. As a Unity developer for Skycadia. I created development tools using C# and Rider/Visual Studio 2022 primarily focused on the creation of systems supporting weapons, ships, and dialogue in the project.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -187,22 +187,22 @@
                                    <!-- #region Skycadia Responsibilities -->
                                     <h3>Responsibilities</h3>
                                     <li align="left">Created a flexible editor tool for implementing Lore Points into the in-game world.</li>
-                                    <p align="left">&emsp;&emsp; This tool uses Prefabs and ScritableObjects to easily create Lore points that popup information and dialogue for the player.</p>
-                                    <li align="left">Created a designer friendly approach to create stats for weapons and ships.</li>
-                                    <p align="left">&emsp;&emsp; Creating this small tool helped speed up the creation proccess immensely, create a ship was just a few clicks and a dragon and a drop away.</p>
+                                    <p align="left">&emsp;&emsp; This tool uses Prefabs and ScritableObjects to easily create Lore points that supply information and dialogue to the player.</p>
+                                    <li align="left">Created a designer friendly approach to create statistics for weapons and ships.</li>
+                                    <p align="left">&emsp;&emsp; Creating this small tool improved the speed of the creation process immensely, creating a ship was just a few clicks.</p>
                                     <li align="left">Subject matter expert for GIT.</li>
-                                    <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to commit, push, fetch, create and branch, and merge changes.</p>
+                                    <p align="left">&emsp;&emsp; Setup the project with git.<br/>&emsp;&emsp; Taught team members how to add , commit, push, fetch, create branch, and merge changes.</p>
                                     <hr/>
                                     <!-- #endregion -->
                                     <!-- #region Skycadia LorePoint Tool -->
                                     <h3>Lore Point Tool</h3>
-                                    <p>This tool makes creating what we called Lore Points easier to insert into levels, with the examples below I created the LorePoint script in which allows the already created dialgue system to be modular and used anywhere.</p>
+                                    <p>This tool makes creating what we call Lore Points easier to insert into levels. The examples below show how I created the LorePoint script which allows the current dialgue system to be modular and used anywhere.</p>
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/skycadiatoolfunction.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Skycadia Lorepoint Screenshot.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/LorePointCreationTool.gif" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4" align="left">This is the script that made the whole system modular, instead of creating a single Lore point that couldn't be reused as it was only activated when you spawn, this takes a more modular approach in which the user will spawn a module/GameObject which has its own data, that data is read from this script effectivly making this script the core of my system.</sup></p>
+                                    <p class="mb-4" align="left">This is the script that made the entire system modular. Instead of creating a single Lore point that couldn't be reused (as it was only activated when you spawn), this takes a more modular approach where the user will spawn a module/GameObject which has its own data. That data is read from this script effectively making this script the core of my system.</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
 {
     if (other.gameObject.CompareTag("TargetableEntity"))
@@ -213,7 +213,7 @@
     }
 }                          
                                     </pre></code>
-                                    <hr/><p class="mb-4" align="left">The snippet below will allow the object to be spawned from a menu item where the camera is currently looking. So instead of created a GameObject and filling that object with components it needs, it can be spawn from a menu preconfigured.</sup></p>
+                                    <hr/><p class="mb-4" align="left">The snippet below will allow the object to be spawned from a menu item where the camera is currently looking. So instead of creating a GameObject and filling that object with the components it needs, it can be spawned from a preconfigured menu.</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">private void OnTriggerEnter(Collider other)
                                         [MenuItem("Skycadia/Create LorePoint")]
 public static void CreateLorePoint(MenuCommand menuCommand)
@@ -261,20 +261,20 @@ void OnDrawGizmosSelected()
                                     <!-- #endregion -->
                                     <hr/>
                                     <!-- #region Skycadia Ship & Pilot Stats -->
-                                    <h3>Designer &hyphen; Friendly Ship & Pilot Stats</h3>
-                                    <p>I developed this system to allow designers to create and modify pilots and ships easily. The pilot and ships system was origionally hard coded but due to the team we had to create an easier and faster iterative way.</p>
+                                    <h3>Designer &hyphen; Friendly Ship & Pilot Statistics</h3>
+                                    <p>I developed this system to allow designers to create and modify pilots and ships easily. The pilot and ships system was originally hard-coded but due to the inexperience of team I had to create a more efficient method.</p>
                                     <!-- Portfolio Modal - Image-->
-                                    <p align="left">The system is based on Scriptable Objects. Scriptable Objects are cross scene data sets used for storing data and creating a simple way to edit the data instead of hardcoding it.</p>
-                                    <p align="left">The screen shots below are examples of my designer &hyphen; friendly stats system. It allows non&hyphen;programmers to iterate faster, so if a designer or artist needs to make a change they have a quick and easy way to do so.</p>
+                                    <p align="left">The system is based on Scriptable Objects. Scriptable Objects are cross-scene data sets used for storing data and creating a simple way to edit the data instead of hard-coding it.</p>
+                                    <p align="left">The screenshots below are examples of my designer&hyphen;friendly system. It allows non&hyphen;programmers to iterate faster. If a designer or artist needs to make a change they have a quick and easy way to do so.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersSO.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/SandersShipSO.png" alt="..." />
                                     <!-- #endregion -->
                                     <hr/>
                                     <!-- #region Skycadia Weapon Stats -->
-                                    <h3>Designer &hyphen; Friendly Weapon Stats</h3>
+                                    <h3>Designer &hyphen; Friendly Weapon Statistics</h3>
                                     <!-- TODO TODO TODO | REWORD AND READ ALLOWED EXPLAIN-->
-                                    <p class="mb-4" align="left">The orignal system had hard coded values that had to be changed from within the scripts.</sup></p>
-                                    <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exists, looks like [newAttribute]. This attribute acts like a condition operator in which it will hide or show something depending on a boolean.</sup></p>
+                                    <p class="mb-4" align="left">The orignal system contained hard-coded values that had to be changed from within the scripts.</sup></p>
+                                    <p class="mb-4" align="left">The snippet below creates a new attribute much like any other attribute that already exists and ooks like [newAttribute]. This attribute acts like a conditional operator which will hide or show something depending on a boolean.</sup></p>
                                     <code><pre class="mb-4 text-white" align="left">    // Determine whether this field should be visible.
 // (We could probably do some caching here...)
 bool ShouldShow(SerializedProperty property) {
@@ -317,7 +317,7 @@ public override float GetPropertyHeight(SerializedProperty property, GUIContent 
     }
 }
                                     </pre></code>
-                                    <p class="mb-4 text-white" align="left">This code snippet is an example of my ConditionalProperty attribute in use, it checks for a boolean value and according to that boolean state the inspector will dynamically change to match your selection. This way, unnecessary values are hidden and makes it easier to read at a glance.</p>
+                                    <p class="mb-4 text-white" align="left">This code snippet is an example of my ConditionalProperty attribute in use. It checks for a boolean value and according to that boolean state the inspector will dynamically change to match your selection. This way unnecessary values are hidden making it easier to read at a glance.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">[Header("Weapon Type Attributes")]
                                         
 [Header("Weapon Type")]
@@ -369,12 +369,12 @@ public float throwerShotDirRandAmt;
 [ConditionalProperty("isFlamethrower")]
 public float throwerShotFireRate;
                                     </pre></code>
-                                    <p align="left">These two screen shots below take that conditional operator and display the weapons stats. If you were to select a certain type of shot you get seperate settings to modify and setup.</p>
+                                    <p align="left">These two screen shots below take the conditional operator and display the weapons stats. If you were to select a certain type of shot style you would get separate settings to modify and set up.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/RapidFireSO.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/FlameThrowerSO.png" alt="..." />
                                     <!-- #endregion -->
                                     <!-- #region Skycadia Conclusion -->
-                                    <p align="left">In conclustion I had created tools ontop of the existing systems to make later modification and create to the systems easier, simpler and quicker. This proved to be a great experience for the non-programmers on the team that had to change the values to introduce new characters, weapons, and ships as well as balance the current ones.</p>
+                                    <p align="left">In conclusion I created tools to better the efficiency of the team.</p>
                                     <!-- #endregion -->
                                     <!-- Portfolio Modal - Text-->
                                     <!-- #region Skycadia Buttons -->
@@ -416,7 +416,7 @@ public float throwerShotFireRate;
         </div>
 <!-- #endregion -->
         
-<!-- #region Critter City -->
+<!-- #region Critter City
         <!-- Portfolio Modal 2 - Melee Combat System-->
         <div class="portfolio-modal modal fade text-white" id="portfolioModalCC" tabindex="-1" aria-labelledby="portfolioModalCC" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -430,7 +430,7 @@ public float throwerShotFireRate;
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">CC &bull; Studio Nisse</h2>
                                     <br/>
-                                    <p>Currently a very early work in progress for Studio Nisse, working with the same multidiceplinary team of Skycadia.</p>
+                                    <p>Currently a very early work in progress for Studio Nisse, working with the same multidisceplinary team of Skycadia.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -442,7 +442,7 @@ public float throwerShotFireRate;
                                     <!-- #region Critter City Responsibility -->
                                     <h3>Responsibilities</h3>
                                     <li align="left">Created the technical documents required. This includes research I have done, requirements of systems this game will need to run on, and the requirements the game must have.</li>
-                                    <p align="left">&emsp;&emsp; So far in this development I have done plenty of research into open world development, and the addressables system unity created.</p>
+                                    <p align="left">&emsp;&emsp; So far in this development I have done of research into open world development, and the addressables system unity created.</p>
                                     <li align="left">Created a tool for animal creation.</li>
                                     <p align="left">&emsp;&emsp; Our game has animals you can ride on and modify the scale, using an asset to do the heavy work for us it requires some setup, I am creating this tool to take the initial setup and just spit out the result..</p>
                                     <li align="left">Subject matter expert for GIT.</li>
@@ -659,9 +659,6 @@ private void TeleportPlayer(TransformState state)
     }
 }
                                     </pre></code>
-                                    <!-- #endregion -->
-                                    <!-- #region Unity Networked FPS Conclusion -->
-                                    <p class="mb-4 text-white" align="left">ADD CONCLUSTION</p>
                                     <!-- #endregion -->
                                     <!-- #region Unity Networked FPS Buttons -->
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
