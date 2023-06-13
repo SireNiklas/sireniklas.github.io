@@ -93,7 +93,8 @@
                         </div>
                         <p class="text-white">Skycadia | Internship, Dec 2022 - Present</p>
                     </div>
-                    <!-- Portfolio Highlight | Skycadia -->
+                    <!--
+                    <!-- Portfolio Highlight | Skycadia
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModalCC">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -101,8 +102,8 @@
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/CCCoverPhoto.png" alt="..." />
                         </div>
-                        <p class="text-white">CC - Studio Nisse | Internship, Dec 2022 - Present</p>
-                    </div>
+                        <p class="text-white">CC - Studio Nisse | Intership, Dec 2022 - Present</p>
+                    </div> -->
                 <!-- Portfolio Item 2 | Projectile Fight -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
@@ -506,7 +507,7 @@ public float throwerShotFireRate;
                                     <br/>
                                     <!-- TODO TODO TODO | UNITY NETWORKING AND STEAM API -->
                                     <!-- REWORD THIS BELOW -->
-                                    <p class="mb-4">Multiplayer FPS Prototype, two clients are able to connect and play via Steam, features include, move and shoot and a few extras such as death and a lobby finder.</p>
+                                    <p class="mb-4">Multiplayer FPS Prototype; two clients are able to connect and play via Steam. features include P2P Connection, host to client simulation, and a lobby finder.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -520,15 +521,15 @@ public float throwerShotFireRate;
                                     <!-- #region Unity Networked FPS Features-->
                                     <h6>FEATURES:</h6>
                                     <!-- REWRITE AND ELABERATE | HOW DID I MAKE THIS WORK? -->
-                                    <li align="left">Establish a connection between two users simultainiously. AKA Lobby</li>
-                                    <p align="left">&emsp;&emsp; Each user can create a lobby, and another can join that said lobby.</p>
-                                    <li align="left">Steam connectivty, to allow players to join eatchother with ease.</li>
-                                    <p align="left">&emsp;&emsp; Players can get invites, or join off of their friends to easily connect, and enjoy. (Side note: this also allows for Steams NATpunchthrough which allows connection without portforwarding.</p>
+                                    <li align="left">Establish a connection between two users simultaneously. (AKA Lobby)</li>
+                                    <p align="left">&emsp;&emsp; Each user can create a lobby and another can join that said lobby.</p>
+                                    <li align="left">Steam connectivty to allow players to join each other with ease.</li>
+                                    <p align="left">&emsp;&emsp; Players can get invites, or join off of their friends to easily connect, and enjoy. (Side note: this also allows for Steams Nat Punchthrough which allows connection without portforwarding.</p>
                                     <li align="left">Server Authoritative for competitive gameplay.</li>
                                     <p align="left">&emsp;&emsp; Keep all players in sync of movement, and allow the server to dictate what goes and what doesn't.</p>
                                     <!-- #endregion -->
                                     <!-- #region Unity Networked FPS Lobby and Connections -->
-                                    <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Steamworks. The issues I had were to get the data from the Steam API to interface properlly with the Unity objects. <br/><br/> The code snippet below displays how I had displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides, this way I could filter my lobbies out from any others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attatched, thus using Unity's UI ToolKit to display in their list view each item that it has grabbed it giving the list the data it needs to present.<br/><br/> <sup>Asteriks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
+                                    <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Facepunch Steamworks. The issues I had were to get the data from the Steam API to interface properly with the Unity objects. <br/><br/> The code snippet below displays how I displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides. This way I could filter my lobbies out from others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attached, thus using Unity's UI ToolKit to display in a list-view each item that it has grabbed it, giving the list the data it needs to present.<br/><br/> <sup>Asterisks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">if (SteamManager.Instance.lobbiesList != null)
 {
 
@@ -594,7 +595,7 @@ public float throwerShotFireRate;
 }                                   
                                     </pre></code>
                                     <br/><br/><hr/>
-                                    <p class="mb-4 text-white" align="left">Server Prediction and Client Reconcilieation were my too main problems that I had to accomplish in which the below does just that. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the clients transform to that of the servers transform.</p>
+                                    <p class="mb-4 text-white" align="left">Server Prediction and Client Reconciliation were my two primary problems that I had to solve. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the client's transform to that of the server's transform.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">void OnServerStateChanged(TransformState previousState, TransformState serverState) {
 if (!IsLocalPlayer) return;
 
@@ -690,7 +691,7 @@ private void TeleportPlayer(TransformState state)
                                     <!-- Portfolio Modal - Title-->
                                     <h2 class="portfolio-modal-title text-white text-uppercase mb-0">Unreal Engine 5 &bull; Exploration</h2>
                                     <br/>
-                                    <p>This section may seem underdeveloped, but it is just a page of my projects and accomplishments I had made in Unreal Engine 5. Some of these projects use Blueprints, whilst other use C++.</p>
+                                    <p>This section may seem underdeveloped, but it is just a page of my projects and accomplishments I have made with Unreal Engine 5. Some of these projects use Blueprints, whilst others use Blueprints and C++.</p>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -699,14 +700,14 @@ private void TeleportPlayer(TransformState state)
                                     </div>
                                     <!-- Portfolio Modal - Image-->
                                     <h3>Battery Collector</h3>
-                                    <p>Battery Collector is a project I made using a tutorial, utilizing C++ and Blueprints. I built upon the character class to allow interaction between pickup-able objects aswell as instantiating effects whilst doing so.</p>
+                                    <p>Battery Collector is a project I made using a tutorial, utilizing C++ and Blueprints. I built upon the character class to allow interaction between pickupable objects as well as instantiating effects.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Unreal Game Demo.gif" alt="..." />
                                     <hr/>
                                     <h3>Melee Combat System</h3>
-                                    <p>Created using the Wukong Paragon model free on the Unreal Marketplace, and linking the abilities and effects using C++ and Blueprints, I setup the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify. This was the first ever project I had worked on in Unreal Engine, and the result is pretty clean!</p>
+                                    <p>Created using the Wukong Paragon model, free on the Unreal Marketplace, and linking the abilities and effects using C++ and Blueprints, I set up the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify. This was the first ever project I had worked on in Unreal Engine, and the result is pretty clean!</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
                                     <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Shaders<hr/></h3>
-                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I setup a pixelated shader, toon/cel shader, and used my cel shader and adapted it to metalic objects. I learned how shaders interact and work within the Engine, although not very experienced with shaders I have a very nice result that I am happy with.</p>
+                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I set up a pixelated shader, toon/cel shader, and used my cel shader and adapted it to metalic objects. I learned how shaders interact and work within the Engine, although not very experienced with shaders I have a very nice result that I am happy with.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/8bitTest.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Toon Shader.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToonCharacter.png" alt="..." />
