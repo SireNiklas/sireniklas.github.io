@@ -529,7 +529,7 @@ public float throwerShotFireRate;
                                     <p align="left">&emsp;&emsp; Keep all players in sync of movement, and allow the server to dictate what goes and what doesn't.</p>
                                     <!-- #endregion -->
                                     <!-- #region Unity Networked FPS Lobby and Connections -->
-                                    <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Facepunch Steamworks. The issues I had were to get the data from the Steam API to interface properly with the Unity objects. <br/><br/> The code snippet below displays how I displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides. This way I could filter my lobbies out from others. After I do so, I created a for loop to iterate through each lobby and display each that has that filter attached, thus using Unity's UI ToolKit to display in a list-view each item that it has grabbed it, giving the list the data it needs to present.<br/><br/> <sup>Asterisks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
+                                    <hr/><p class="mb-4" align="left">Lobby and client connections were accomplished using Netcode for GameObjects with Facepunch Steamworks. The issues I had were to get the data from the Steam API to interface properly with the Unity objects. <br/><br/> The code snippet below displays how I displayed Lobbies that were created. <br/><br/> I created a filter of <b>isTesting</b> as I was using the test AppID Steam provides. This way I could filter my lobbies out from others. I created a for loop to iterate through each lobby and display each that has that filter attached, thus using Unity's UI ToolKit to display in a list-view each item that it has grabbed, giving the list the data it needs to present.<br/><br/> <sup>Asterisks surrounding words such as <b>Button</b> or <b>Label</b> interfered with the HTML and code presentation</sup></p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">if (SteamManager.Instance.lobbiesList != null)
 {
 
@@ -595,7 +595,7 @@ public float throwerShotFireRate;
 }                                   
                                     </pre></code>
                                     <br/><br/><hr/>
-                                    <p class="mb-4 text-white" align="left">Server Prediction and Client Reconciliation were my two primary problems that I had to solve. <br/><br/>The code below checks if the player is not equal to the server position than the server will correct the player by setting the client's transform to that of the server's transform.</p>
+                                    <p class="mb-4 text-white" align="left">Server Prediction and Client Reconciliation were my two primary problems that I had to solve. <br/><br/>The code below checks if the player is not equal to the server position then the server will correct the player by setting the client's transform to that of the server's transform.</p>
                                     <hr/><code><pre class="mb-4 text-white" align="left">void OnServerStateChanged(TransformState previousState, TransformState serverState) {
 if (!IsLocalPlayer) return;
 
@@ -706,8 +706,9 @@ private void TeleportPlayer(TransformState state)
                                     <h3>Melee Combat System</h3>
                                     <p>Created using the Wukong Paragon model, free on the Unreal Marketplace, and linking the abilities and effects using C++ and Blueprints, I set up the main logic and backend in C++ and created extentions to Blueprints for easy access to change and modify. This was the first ever project I had worked on in Unreal Engine, and the result is pretty clean!</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/wukongportfolio.gif" alt="..." />
-                                    <h3 class="portfolio-modal-title text-white text-uppercase mb-0">Shaders<hr/></h3>
-                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph, I set up a pixelated shader, toon/cel shader, and used my cel shader and adapted it to metalic objects. I learned how shaders interact and work within the Engine, although not very experienced with shaders I have a very nice result that I am happy with.</p>
+                                    <hr/>
+                                    <h3>Shaders</h3>
+                                    <p class="mb-4 text-white" align="left">Shaders were created in the Unreal Shader Graph. I set up a pixelated shader, toon/cel shader, and used my cel shader and adapted it to metallic objects. I learned how shaders interact and work within the Engine. Although not very experienced with shaders, I have a very nice result that I am happy with.</p>
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/8bitTest.png" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Toon Shader.gif" alt="..." />
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ToonCharacter.png" alt="..." />
