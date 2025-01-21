@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio - Nicholas Harris</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+
+        <style>
+            code pre {
+            background-color: #161618;
+            border: 1px solid #161618;
+            display: block;
+            padding: 5px;
+            }
+
+            a:hover {
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Nicholas Harris - Game Development</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../index.html#portfolio">Go Back</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center" id="home">
+            <div class="container d-flex align-items-center flex-column">
+                    <!-- Portfolio Highlight | Skycadia -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"</div>
+                            </div>
+                            <img class="img-fluid" style="border-radius: 3%; border-style: solid; border-color: #2d3436;" src="../assets/img/portfolio/IroncladCover.png" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </p>
+            <!--<span style="font-size: 42px">VIEW PROJECTS</span>
+            <span style="font-size: 72px">&#129095;</span>-->
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-white text-uppercase text-secondary mb-0">Project: Ironclad | Online Multiplayer TCG</h2>
+        </section>
+
+<!-- #region Skycadia -->
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Highlight-->
+                    <div class="pb-5 text-white">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- #region Skycadia Title -->
+                                    <!-- Portfolio Modal - Title-->
+                                    <p class="text-center">Ironclad is an internal name for a game I and a few friends are making that is to be a Battle Tech, Magic The Gathering, and Hearthstone like Trading Card Game. I have done multiple approaches with the development of this project as they will be iterated below.</p>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                   <!-- #region Skycadia Responsibilities -->
+                                   <center><h3>Responsibilities</h3></center>
+                                    <li>Developed a PostgreSQL database with a relational structure to handle Players, Decks, and Cards.<br/><br/></li>
+                                    <li align="left">Developed the multiplayer infrastructure using Fishnet (Mirror decendent)<br/><br/></li>
+                                    <li align="left">Leading a multi-dicplined team that ranges from (2D & 3D Artists, Audio, Narrative, and Porgramming)</li>
+                                    <center> <hr/>
+                                    <!-- #endregion -->
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4" align="left">As of now I have a working players, hands, and decks accross multiplayer. Each player and their hand is unqiue aswell as the soecified card image. The information is all loaded from the database for the specified players on game initialize.</p>
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/UnityCardGame.gif" alt="..." />
+                                    <hr/><p class="mb-4" align="left">
+                                        This is closer to the current point I have the game. I decided to change routes and opted to develop the entire backend infrastructure myself. This will include (Player  Management/Authentication, Social features, Match Making, and the Game Server). I have chosen this route as I wish to create an infrastructure I can use accross games. I haven't decided on using Fishnet/Mirror for the games networking over a custom C#/SignalR server implementation. The two gifs show as described. Top one displays an endpoint player action, so I send a reques to the endpoint and I will recieve the data I wish back, the second one is via websockets, this was my quick SignalR implementation I have no game information for that build not yet. The last which is just an image is a screenshot of the current state, where I have a Core Client, Client App, Server API, Server Core, as well as a Shared project. These use abstractions, inheritance, instancing, and encapsulation to keep it clean and tidy.
+                                    </p>
+                                    <hr/>
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/WebAPICardGame.gif" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="../assets/img/portfolio/TCGGameState.png" alt="..." />
+                                    <!-- #endregion -->
+                                    <hr/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <!-- #region Unity Networked FPS Buttons -->
+                                    <a href="../index.html#portfolio"><button class="btn btn-primary">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Go Back
+                                    </button></a>
+                                    &nbsp;&nbsp;<button class="btn btn-primary" onclick="window.open('https://github.com/SireNiklas/Project-Ironclad/','_blank')">
+                                        <i class="fab fa-fw fa-github"></i>
+                                        Visit <b>Ironclad - Unity</b> Github page.
+                                    </button>
+                                    &nbsp;&nbsp;<button class="btn btn-primary" onclick="window.open('https://github.com/SireNiklas/Project-Ironclad-Custom-Game-Server','_blank')">
+                                        <i class="fab fa-fw fa-github"></i>
+                                        Visit <b>Ironclad - SignalR</b> Github page.
+                                    </button></center>
+                                    <!-- #endregion -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- #endregion -->
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>&copy; 2023 sireniklas.github.io</small></div>
+        </div>
+
+                <!-- Portfolio Modal - PORTFOLIO -->
+        <div class="portfolio-modal modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-white text-uppercase mb-0">NICHOLAS HARRIS - RESUME</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <div class="modal-body">
+
+                                        <embed src="../assets/resume\Nicholas Harris Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                                               frameborder="0" width="100%" height="700">
+                                    <!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        $(document).ready(function() {
+
+          if(window.location.href.indexOf('#portfolioModal3') != -1) {
+            $('#portfolioModal3').modal('show');
+          }
+
+        });
+        </script>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
